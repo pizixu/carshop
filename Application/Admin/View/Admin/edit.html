@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>修改管理员——后台管理</title>
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_PUC;?>/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_PUC;?>/css/main.css"/>
+    <script type="text/javascript" src="<?php echo ADMIN_PUC;?>/js/libs/modernizr.min.js"></script>
+</head>
+<body>
+<include file="Common/top" /> 
+<div class="container clearfix">
+    <div class="sidebar-wrap">
+        <div class="sidebar-title">
+            <h1>菜单</h1>
+        </div>
+        <include file="Common/left" /> 
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin/design/">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="__MODULE__/Admin/lst">管理员管理</a><span class="crumb-step">&gt;</span><span>修改管理员</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="{$adminres.id}" />
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>管理员名称：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="username" size="50" value="{$adminres.username}" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>管理员密码：</th>
+                                <td><input class="common-text" name="password" size="50" value="" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>所属角色：</th>
+                                <td>
+                                <select name="roleid">
+                                    <volist name="roles" id="vo">
+                                    <option <if condition="$adminres['roleid'] eq $vo['id']">selected="selected"</if> value="{$vo.id}">{$vo.rolename}</option>
+                                    </volist>
+                                </select>
+                                
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

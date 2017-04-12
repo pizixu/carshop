@@ -1,0 +1,175 @@
+/* cart */
+@font-face{
+    font-family:"member";
+    src:
+        url('../font/member.woff') format('woff'),
+        url('../font/member.ttf') format('truetype');
+}
+.member_iconfont{
+    font-family:"member" !important;
+    font-style:normal;
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-stroke-width:0.2px;
+    -moz-osx-font-smoothing:grayscale;
+}
+.cart_alert_login{width:87.8125%;margin:4% auto 0;overflow:hidden;font:0.2rem/3 "microsoft yahei";color:#2f2f2f}
+.cart_alert_login p{float:left;width:58%;white-space: nowrap}
+.cart_alert_right{float:right;overflow:hidden;width:40%;}
+.cart_alert_right a{color:#fff;border-radius:3px;float:right;display:block;width:44.4%;margin-left:3%;height:0.4rem;line-height:0.4rem;margin-top:0.1rem;text-align:center;}
+.cart-list{width:95%;margin:0 auto;height:auto;overflow:hidden}
+.cart-list li{width:100%;height:auto;border-bottom:1px solid #dbdbdb;padding:2% 0;overflow:hidden;position:relative;}
+.cart-list-img{display:block;float:left;width:25.89%;margin-left:8.75%;height:auto;overflow:hidden;}
+.cart-list-img img{width:100%;}
+.cart-list-title{width:44.28%;height:auto;float:left;overflow:hidden;margin:0 2.5% 0 1.6%;}
+.cart-list-text{width:100%;font:0.2rem/0.22rem "microsoft yahei";height:0.3rem;overflow:hidden;display:block;margin:0rem 0 0.06rem;float:left;}
+#orderPay label{border:2px solid transparent;display:block;}
+#orderPay label img{width:100%}
+
+.cart-list-title a{color:#575757}
+.cart-list-bat { float:right; width:20.8%;}
+.cart-list-numbers{width:54.14%;height:0.32rem;border:1px solid #ccc;overflow:hidden}
+.cart-list-numbers span,.cart-list-numbers input{width:32%;display:block;height:0.32rem;border:0;font:0.24rem/0.32rem "microsoft yahei";text-align:center;float:left;-webkit-appearance:none;}
+.cart-list-numbers input{border-left:1px solid #ccc;border-right:1px solid #ccc;font-size:1.2em;border-radius:0}
+.cart-list-price{float:left;width:21.78%; white-space: nowrap;height:auto;padding-top:2%;font:0.22rem/1 "microsoft yahei";text-align:center;color:#575757; text-align:left;padding-left:1%;}
+.cart-list-price2{float:left;width:44.28%;margin:1% 2.5% 0 1.6%;height:auto;padding-top:0%;font:0.22rem/1.2 "microsoft yahei";text-align:left;color:#575757; white-space: nowrap;text-align:left;}
+
+.cart-list-del a{position:absolute;right:0;top:0;width:4.14%;padding:2.5%;z-index:88;overflow:hidden;}
+.cart-select{width:8.57%;position:absolute;left:0;top:0;height:100%; }
+.cart-select span{display:block;width:10px;height:10px;background:#dbdbdb;border-radius:50%;position:absolute;top:50%;left:50%;margin:-5px;}
+.cart-settle{width:89.6875%;margin:5% auto;overflow:hidden;background:#dbdbdb;position:relative;}
+.cart-settle p{float:left;font:0.24rem/0.5rem "microsoft yahei";color:#696969;padding-left:3.13%}
+.cart-settle p span{font-size:0.24rem}
+.cart-settle-btn{position:absolute;right:0;height:100%;top:0;width:27.87%;border-radius:0;text-align:center;font:0.24rem/0.5rem "microsoft yahei";color:#fff;overflow:hidden;border:0;-webkit-appearance:none;}
+.cart_top_address{width:87.5%;margin:2% auto;height:auto;overflow:hidden;background:url(../images/address_top.jpg) right bottom no-repeat #e7e7e7;background-size:18.57%;padding:1% 4.64%;position:relative;}
+.cart_top_address_text{width:96%;overflow:hidden;display:block;}
+.cart_top_address_text span{font:0.22rem/1.4 "microsoft yahei";color:#333;display:block;float:left;margin-right:4%}
+.cart_top_address_text span a{color:#575757;}
+.cart_top_address_change{position:absolute;font:0.2rem/1.4 "microsoft yahei";color:#fff;right:4.64%;top:6%; background:#c60000;border-radius:3px; padding:0 2%; }
+.cart_order_title{width:87.5%;margin:0 auto;border-top:1px solid #e1e1e1;font:0.22rem/2 "microsoft yahei";color:#575757;}
+.cart_order_type{width:87.5%;margin:0 auto;overflow:hidden;padding-top:2%;}
+.cart_order_type span{display:block;float:left;border:1px solid #d4d4d4;font:0.22rem/2 "microsoft yahei";color:#575757;margin:0 1.42% 2% 0;padding:0 4%}
+.cart_type_company{width:87.5%;margin:0 auto;overflow:hidden;display:none}
+.cart_type_company li{width:100%;height:auto;overflow:hidden;padding-bottom:3%;}
+.cart_type_company li p{float:left;font:0.16rem/0.4rem "microsoft yahei";color:#575757}
+.cart_type_company li input{float:left;height:0.4rem;width:70%;border:1px solid #d1d1d1;font:0.16rem/0.4rem "microsoft yahei";background:#ededed;-webkit-appearance:none;border-radius:0;padding:0 2%}
+.cart_type_company li select{-webkit-appearance:none;border-radius:0;background:#ededed;border:1px solid #d1d1d1;font:0.16rem/0.4rem "microsoft yahei";padding:0 3%;}
+.cart_imgs_number{width:87.5%;margin:2% auto;overflow:hidden;padding:2% 0;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;}
+.cart_imgs_list{float:left;width:46.875%;height:auto;overflow:hidden}
+.cart_imgs_list li{width:33.3%;float:left;height:auto;overflow:hidden;}
+.cart_imgs_list li a{display:block;width:90%;}
+.cart_imgs_list li a img{width:100%}
+.cart_imgs_more{display:block;width:50%;float:left;text-align:center;font:0.22rem/0.5rem "microsoft yahei";color:#575757}
+.cart_imgs_more span{line-height:2;float:left;}
+.cart_imgs_more i{float:right;font:0.28rem/0.5rem "microsoft yahei"}
+.cart_price{width:87.5%;margin:0 auto;height:auto;overflow:hidden}
+.cart_price p{width:100%;height:auto;font:0.18rem/1.4 "microsoft yahei";position:relative;overflow:hidden;color:#c1c1c1;}
+.cart_price p span{position: absolute;right:0;top:0}
+.cart_margin{margin-left:2%}
+/* to_msg */
+.to_msg{width:87.5%;margin:2% auto;text-align:center;font:0.22rem/2 "microsoft yahei";color:#fff;display:block;}
+.had_msg{width:87.5%;margin:2% auto 4%;height:auto;overflow:hidden}
+.had_msg li{width:100%;border-bottom:1px solid #dbdbdb;overflow:hidden;padding:2% 0;}
+.had_msg li div{width:100%;font:0.2rem/1.2 "microsoft yahei";color:#575757}
+.had_msg li h2{background:#ededed;padding:1% 2.14%;margin:2% auto 0;font:0.2rem/1.2 "microsoft yahei";height:auto;}
+
+/* vip_address */
+.vip_address_top{width:87.5%;margin:2% auto;text-align:center;font:0.18rem/2.4 "microsoft yahei";color:#fff;display:block}
+.vip_address_list{width:87.5%;margin:2% auto;height:auto;overflow:hidden}
+.vip_address_list li{border:1px solid #e0e0e0;padding:2%;overflow:hidden;background:#f2f2f2;margin:0 auto 2%;font:0.2rem/1.5 "microsoft yahei";position:relative;}
+.vip_address_btn{width:54%;position:absolute;text-align:right;top:4%;right:0;overflow:hidden}
+.vip_address_btn span{display:inline-block;color:#fff;background:#a5a5a5;padding:1% 4%;border-radius:3px;margin-right:2%;}
+.vip_address_btn a{color:#fff}
+.vip_logout{width:87.5%;margin:2% auto;overflow:hidden;color:#fff;}
+.vip_logout a{float:left;font:0.18rem/0.42rem "microsoft yahei";color:#fff;padding-left:4%;}
+.vip_backup{float:right;font:0.18rem/0.42rem "microsoft yahei";color:#fff;padding-right:4%;}
+.check_p{width:28%;height:0.4rem;font:0.18rem/0.4rem "microsoft yahei";text-align:center;background:#e7e7e7;color:#4b4b4b}
+.check_p span.member_iconfont{color:#e7e7e7}
+.check_p.common_bg span.member_iconfont,.check_p.common_bg{color:#fff}
+/* vip_order */
+.order_list{width:94%;margin:2% auto;height:auto;overflow:hidden}
+.order_list li{width:95%;height:auto;border:1px solid #e0e0e0;background:#eee;padding:2%;overflow:hidden; margin-bottom:0.16rem;}
+.order_img{display:block;width:32.89%;height:auto;overflow:hidden;float:left;margin-right:1.78%;}
+.order_img img{width:100%}
+.order_right{float:left;width:82%;height:auto;overflow:hidden;padding-bottom:1%}
+.order_right_id{width:100%;height:0.67rem;overflow:hidden;font:0.2rem/0.24rem "microsoft yahei";color:#575757}
+.order_right_id a{color:#000}
+.order_right_price{width:100%;font:0.2rem/0.24rem "microsoft yahei";color:#818181;margin-bottom:3%;margin-top: 3%;}
+.wait_pay{font:0.22rem/0.24rem "microsoft yahei";color:#fff;padding:2% 4%;border-radius:3px; float:left; margin-right:3%; }
+.wait_shipping{font:0.22rem/0.24rem "microsoft yahei";color:#fff;padding:2% 4%;border-radius:3px;background:#bbb; float:left;margin-right:3%;}
+.order_done{font:0.18rem/0.24rem "microsoft yahei";padding:2% 0;color:#339d12}
+.top-tl a.member_iconfont{color:#fff;}
+.order_date_select{width:92%;margin:3% auto;height:auto;overflow:hidden;}
+.order_date_select li{width:100%;font:0.2rem/0.3rem "microsoft yahei";color:#333;padding:0 2%;margin:2% auto;}
+.order_date_select li a{color:#fff;display:block;width:100%;}
+.Wait { color:#666666}
+.Send_out { color:#339966}
+.Success { color:#FF6600}
+/* vip */
+.vip_welcome{width:87.5%;margin:3% auto;height:auto;overflow:hidden;padding:4% 0;text-align:center;font:0.22rem/1 "microsoft yahei";color:#fff;}
+.vip_welcome span{font-size:0.4rem}
+.vip_top_links{width:87.5%;margin:2% auto;overflow:hidden;border:1px solid #e0e0e0;}
+.vip_top_links a{width:32%;float:left;border-right:1px solid #dfdfdf;overflow:hidden;display:block;text-align:center;padding:3% 0}
+.vip_top_links a:last-child{border:0}
+.vip_top_links a font{font:0.2rem/1.4 "microsoft yahei";color:#949494;}
+.vip_top_links a span{display:block;font:0.2rem/1.4 "microsoft yahei";color:#949494;text-align:center;}
+.vip_btns{width:87.5%;margin:2% auto 10% auto;height:auto;overflow:hidden}
+.vip_btns a{display:block;width:25%;height:auto;float:left;overflow:hidden}
+.vip_btns a span{display:block;width:73.57%;margin:0 auto;font:0.38rem/1 "microsoft yahei";text-align:center;color:#fff;border-radius:50%;padding:20% 0}
+.vip_btns a i{display:block;width:100%;text-align:center;font:0.18rem/2 "microsoft yahei";color:#9e9e9e;overflow:hidden}
+/* order_view_top */
+.order_view_top{width:87.5%;margin:2% auto;border-top:1px solid #dad9d9;font:0.22rem/2.4 "microsoft yahei";color:#333;}
+.order_view_btn{width:87.5%;margin:2% auto;height:auto;overflow:hidden;text-align:right;}
+.order_view_btn a{color:#fff;border-radius:0.04rem;padding:2% 6%;margin-left:4%;display:inline-block;font-size:0.18rem}
+.order_view_width{width:78%;margin:0 auto;}
+.cart_border_none{border:0}
+.order_view_price{border-top:1px solid #dad9d9;padding-top:2%}
+.order_view_price p{color:#626262}
+.order_view_price p span.order_view_red{color:#ff5958}
+.order_view_price p select{width:50%;-webkit-appearance:none}
+.order_view_pf_bg{position:fixed;width:100%;height:100%;z-index:999;top:0;left:0;background:rgba(0,0,0,.74);display:none}
+.order_view_pf{width:87.5%;height:3.5rem;position:fixed;top:50%;left:6.25%;background:#fff;z-index:999;margin-top:-1.75rem;}
+.order_view_pf_title{width:100%;height:0.4rem;color:#fff;position:relative;text-align:center;}
+.order_view_pf_title p{width:10%;position:absolute;right:0;top:0;text-align:center;font:0.3rem/0.4rem "microsoft yahei";color:#fff;}
+.order_view_pf_name{width:77.5%;margin:0 auto;font:0.18rem/0.4rem "microsoft yahei";color:#474747;text-overflow: ellipsis;overflow:hidden;white-space: nowrap;}
+.order_view_pf textarea{width:77.5%;margin:2% auto;display:block;font:0.18rem/0.2rem "microsoft yahei";color:#474747;resize: none;height:1.35rem;border:1px solid #b8b8b8;-webkit-appearance:none;border-radius:0}
+.order_view_pf_btn{border:0;width:77.5%;margin:0 auto;display:block;font:0.18rem/0.4rem "microsoft yahei";color:#fff;text-align:center;border-radius:4px;-webkit-appearance:none}
+
+/* banner */
+.big-pic{width:100%;position:relative;z-index:2;margin:0 auto}
+.big-pic-in{position:relative;width:100%;height:auto;overflow:hidden;margin:0 auto;}
+.pic-list{position:relative;height:auto;-webkit-transform:translate3d(0,0,0); z-index:0;}
+.pic-list img{float:left;height:auto; width:100%;display:block;}
+.big-pic2 .pic-list{width:200%;}
+.big-pic2 .pic-list img{width:50%;}
+.big-pic3 .pic-list{width:300%;}
+.big-pic3 .pic-list img{width:33.333334%;}
+.big-pic4 .pic-list{width:400%;}
+.big-pic4 .pic-list img{width:25%;}
+.big-pic5 .pic-list{width:500%;}
+.big-pic5 .pic-list img{width:20%;}
+.big-pic6 .pic-list{width:600%;}
+.big-pic6 .pic-list img{width:16.67%;}
+.big-pic7 .pic-list{width:700%;}
+.big-pic7 .pic-list img{width:14.26%;}
+.big-pic8 .pic-list{width:800%;}
+.big-pic8 .pic-list img{width:12.5%;}
+.big-pic9 .pic-list{width:900%;}
+.big-pic9 .pic-list img{width:11.1%;}
+.big-pic10 .pic-list{width:1000%;}
+.big-pic10 .pic-list img{width:10%;}
+.slide-dot{width:100%;text-align:center;height:16px;padding-top:4px;overflow:hidden;position:absolute;bottom:5px;display:none}
+.slide-dot span{display:inline-block;width:8px;height:8px;border-radius:8px;vertical-align:top; z-index:10;margin:0 7px;background:#fff}
+.slide-dot span.slide-dot-cur{z-index:10;vertical-align:top;background:#6b1b55}
+.transition {-moz-transition: -moz-transform 0.3s ease-out; -webkit-transition: -webkit-transform 0.3s ease-out; -o-transition: -o-transform 0.3s ease-out; transition: transform 0.3s ease-out;}
+/* common style */
+.common_bg,.cart-select.on span,.afPopup > header,.afPopup .button,.vip_address_btn span.common_bg{background-color:red;}
+.common_color,.view_collect p.collected,.login li a{color:red;}
+.common_border,.cart_order_type span.on,#orderPay label:active{border-color:red}
+
+/* msg & reg */
+.msg_pin{width:100%;float:left;height:0.52rem; font-size:0.3rem; line-height:0.52rem;text-align:center;margin-left:0%;border-radius:6px; color:#fff; background:#f14400;}
+.msg_input{display:block;border:1px solid #d9d9d9;background:#fff;width:94%;float:left;height:0.52rem;font:0.2rem/0.42rem "microsoft yahei";text-indent:0.1rem;-webkit-appearance:none;border-radius:6px;}
+.msg_textarea{display:block;border:1px solid #d9d9d9;background:#fff;width:94%;float:left;height:1.42rem;font:0.2rem/0.42rem "microsoft yahei";text-indent:0.1rem;-webkit-appearance:none;border-radius:6px;resize: none}
+.msg_input2{display:block;border:1px solid #d9d9d9;background:#fff;width:50%;float:left;height:0.42rem;font:0.2rem/0.42rem "microsoft yahei";text-indent:0.1rem;-webkit-appearance:none;border-radius:6px;}
+.redmc { font-weight:bold;font:0.28rem/0.62rem "microsoft yahei"; }
+.msg_pin-value {width:80%;float:left;height:0.52rem; font-size:0.3rem; line-height:0.52rem;text-align:center;margin-left:0%;border-radius:6px; color:#fff; background:#f14400; margin-left:10%; border:0;background:#f14400;}

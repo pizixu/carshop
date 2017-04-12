@@ -1,0 +1,22 @@
+<?php
+return array (
+  'DB_TYPE' => 'mysql',
+  'DB_HOST' => 'localhost',
+  'DB_NAME' => 'carshop',
+  'DB_USER' => 'root',
+  'DB_PWD' => '',
+  'DB_PORT' => 3306,
+  'DB_PREFIX' => 'cs_',
+  'DB_CHARSET' => 'utf8',
+  'DOMAIN' => 'htpp://127.0.0.1/carshop',
+  'TITLE' => '我的网站—汽车网站',
+  'KEYWORDS' => 'thinkphp ',
+  'DESCRIPTION' => '痞子胥thikphp网站3',
+  'EMAIL' => '痞子胥@163.com',
+  'CONTACT' => '痞子胥',
+  'FAX' => '12456585',
+  'PHONE' => '1378165***',
+  'ICP' => '备********号',
+  'COPY' => '痞子胥版权所有',
+  'ADDRESS' => '中国北京123',
+); ?>

@@ -1,0 +1,6 @@
+<ul class="nav">
+  <li><a href="/index.php/Cnm/Index/index.html" title="首页"><span class="iconfont">&#xe607;</span>首页</a></li>
+  <volist name="cateres" id="vo">
+  <li><a href="__MODULE__/<if condition="$vo['type'] eq 1">Arlist<elseif condition="$vo['type'] eq 2"/>Page<elseif condition="$vo['type'] eq 3"/>Message<elseif condition="$vo['type'] eq 4"/>Zplist<elseif condition="$vo['type'] eq 5"/>Carlist<elseif condition="$vo['type'] eq 6"/>Ry<elseif condition="$vo['type'] eq 7"/>Job</if>/index/cateid/{$vo.id}" title="关于我们">{$vo.name}</a></li>
+  </volist>
+</ul>

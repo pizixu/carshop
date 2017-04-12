@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>人才招聘_这里是您的网站名称</title>
+<meta name="keywords" content="这里是您的网站名称" />
+<meta name="description" content="这里是您的网站名称"/>
+
+<meta name="Author" content="024" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<script type="text/javascript" src="__PUBLIC__/pc/style/urlredirect.js"></script>
+<LINK href="__PUBLIC__/pc/style/style.css" rel=stylesheet>
+<LINK href="__PUBLIC__/pc/style/jbox.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/validForm/FormValid.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jbox/jquery.jBox-2.3.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/search.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jQselect.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/slides.min.jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="__PUBLIC__/pc/style/jquery.touchSlider.js"></script>
+<script type="text/javascript"><!--ibanner-->
+
+$(document).ready(function () {
+	$(".main_visual").hover(function(){
+		$("#btn_prev,#btn_next").fadeIn()
+		},function(){
+		$("#btn_prev,#btn_next").fadeOut()
+		})
+	$dragBln = false;
+	$(".main_image").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev"),
+		btn_next : $("#btn_next"),
+		paging : $(".flicking_con a"),
+		counter : function (e) {
+			$(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	$(".main_image").bind("mousedown", function() {
+		$dragBln = false;
+	})
+	$(".main_image").bind("dragstart", function() {
+		$dragBln = true;
+	})
+	$(".main_image a").click(function() {
+		if($dragBln) {
+			return false;
+		}
+	})
+	timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	$(".main_visual").hover(function() {
+		clearInterval(timer);
+	}, function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+	$(".main_image").bind("touchstart", function() {
+		clearInterval(timer);
+	}).bind("touchend", function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+});
+</script>
+<script><!--pro-->
+		$(function(){
+			// Set starting slide to 1
+			var startSlide = 1;
+			// Get slide number if it exists
+			if (window.location.hash) {
+				startSlide = window.location.hash.replace('#','');
+			}
+			// Initialize Slides
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				generatePagination: true,
+				play: 0,
+				pause: 2500,
+				hoverPause: true,
+				// Get the starting slide
+				start: startSlide,
+				animationComplete: function(current){
+					// Set the slide number as a hash
+					//window.location.hash = '#' + current;
+				}
+			});
+		});
+</script>
+<!--[if IE 6]><script type="text/javascript" src="js/DD_belatedPNG.js"></script><![endif]-->
+</head>
+<body>
+<div class="fixed"> <a href="book.php" title="留言" class="barbook"></a> <a href="javascript:;" title="二维码" class="codepic"></a> <a href="javascript:;" title="返回顶部" class="backup"></a>
+  <div> <img src="http://0001543.ks.panguweb.cn/upfile/qr/qrcode.png" alt="这里是您的网站名称" class="code" /> </div>
+</div>
+<include file="Common/head"/>
+<div class="fy" style=" background:url(__PUBLIC__/pc/images/20150804113438-369103644.jpg) center top no-repeat;">
+    <div class="fra">
+ <include file="Common/left"/>
+  <div class="fyRight">
+      <div class="title"> <span class="fl"> 人才招聘</span> <span class="fr">当前位置：<a href="http://0001543.ks.panguweb.cn/" title="首页">首页</a> > <font>人才招聘</font> </span></div>
+             <div class="hrBox">
+      <div class="hrBoxL">
+        <ul>
+          <li><span>所需职位：</span></li>
+          <li class="bgWhite">所需人数：</li>
+          <li class="haode">具体要求：</li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="hrBoxR">
+        <ul>
+          <li class="topline"><span class="fl"> UI设计师</span><a href="hr_view.php?id=16" class="fr" title="应聘此职位"><img src="__PUBLIC__/pc/images/re.gif" width="90" height="26" /></a>
+            <div class="clear"></div>
+          </li>
+          <li class="bgWhite">1            <div class="clear"></div>
+          </li>
+          <li class="haode"> 1、收集和分析用户界面需求；<br />
+2、结合用户体验及技术可行性确定线框图；<br />
+3、将线框图设计为平面效果图；<br />
+4、跟踪开发和测试；<br />
+5、根据数据分析，对页面进行优化。</li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+        <div class="hrBox">
+      <div class="hrBoxL">
+        <ul>
+          <li><span>所需职位：</span></li>
+          <li class="bgWhite">所需人数：</li>
+          <li class="haode">具体要求：</li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="hrBoxR">
+        <ul>
+          <li class="topline"><span class="fl"> 百度营销顾问</span><a href="hr_view.php?id=15" class="fr" title="应聘此职位"><img src="__PUBLIC__/pc/images/re.gif" width="90" height="26" /></a>
+            <div class="clear"></div>
+          </li>
+          <li class="bgWhite">10            <div class="clear"></div>
+          </li>
+          <li class="haode"> 1、负责百度产品石家庄地区的推广<br />
+2、以电话、面访及会议等方式发掘并跟踪潜在客户，积累客户资源，销售"百度推广"产品<br />
+薪资福利：高薪+工龄年终奖+标准工作时间+国家法定节假日+带薪年休假+午餐补助+完善的福利制度+广阔的职业发展空间，入职即缴纳五险一金</li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+        <div class="hrBox">
+      <div class="hrBoxL">
+        <ul>
+          <li><span>所需职位：</span></li>
+          <li class="bgWhite">所需人数：</li>
+          <li class="haode">具体要求：</li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="hrBoxR">
+        <ul>
+          <li class="topline"><span class="fl"> 市场专员</span><a href="hr_view.php?id=14" class="fr" title="应聘此职位"><img src="__PUBLIC__/pc/images/re.gif" width="90" height="26" /></a>
+            <div class="clear"></div>
+          </li>
+          <li class="bgWhite">10            <div class="clear"></div>
+          </li>
+          <li class="haode"> <pre>
+<span style="font-size: small"><span style="font-family: 宋体">1、进行市场调研、市场相关信息收集整理反馈工作  
+2、协助公司物料礼品管理，做好相关登记  
+3、策划或协调执行市场开发计划及方案         
+4、撰写市场部活动报道及媒体合作报道
+5、市场部日常数据统计分析及档案管理 
+注：本岗位不是销售类工作，求销售工作者可关注"营销顾问"岗位</span></span></pre>
+</li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+        <div class="hrBox">
+      <div class="hrBoxL">
+        <ul>
+          <li><span>所需职位：</span></li>
+          <li class="bgWhite">所需人数：</li>
+          <li class="haode">具体要求：</li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="hrBoxR">
+        <ul>
+          <li class="topline"><span class="fl"> 媒体外联部主管</span><a href="hr_view.php?id=13" class="fr" title="应聘此职位"><img src="__PUBLIC__/pc/images/re.gif" width="90" height="26" /></a>
+            <div class="clear"></div>
+          </li>
+          <li class="bgWhite">2            <div class="clear"></div>
+          </li>
+          <li class="haode"> 1、公关策略的制定及公关活动策划，评估媒体执行、媒体报道；<br />
+2、积极维护品牌形象，有较好的危机公关意识，处理公司媒体舆论监控及危机管理方面事宜，能对突发的公关危机状况巧妙的处理和化解；<br />
+3、维护媒体关系，应对与处理公司负面新闻，负责日常媒体监控，营造利于公司业务发展的舆论环境；<br />
+4、负责媒体资源整合，代表公司和各大媒体进行策划沟通、合作洽谈等工作挖掘相关新闻点，根据需求与总部协调媒体稿件的撰写；<br />
+5、维护、利用政府、行业协会等第三方机构关系，助力公司业务发展，为公司争取利益；<br />
+6、广告投放渠道选择与分析。</li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+        <div class="clear"></div>
+    <div class="page"><form action="/hr.php?&" name="subpage" method="get">
+<a class="bg le">上一页</a><span class="current">1</span><a href='/hr.php?&pageno=2' title='跳转到第2页' >2</a><a href='/hr.php?&pageno=3' title='跳转到第3页' >3</a><a href='/hr.php?&pageno=4' title='跳转到第4页' >4</a> <a href='/hr.php?&pageno=2' title='跳转到第2页'  class="bg ri" >下一页</a> <span class="total">共4页</span><span class="reach">到第</span><span><input id="gotopages" name="pageno" class="input_page" value="" /></span><span class="reach">页</span><span class="btn"><a href="javascript:void(0);" title="确定" onclick="var pnum=document.getElementById('gotopages').value;if(pnum!=''){window.location.href='/hr.php?&pageno='+pnum;}else{alert('请输入要跳转的页数');}">确定</a></span></form></div>	
+  </div>
+</div>
+</div>
+
+<div class="clear"></div>
+ <include file="Common/foot"/>
+    </body>
+</html>
+

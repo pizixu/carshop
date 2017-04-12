@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="Author" content="0431" />
+<title>这里是您的网站名称1</title>
+<meta name="keywords" content="这里是您的网站名称4" />
+<meta name="description" content="这里是您的网站名称" />
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/mobile/style/subpage.css" />
+    
+<script type="text/javascript" src="__PUBLIC__/mobile/style/jquery.js"></script>
+    
+  
+
+
+<style>
+.head {
+    background: #1a2a38;
+}
+.foot {
+    background: #132330;
+}
+.nav {
+    background: #0152b5 !important
+}
+.nav_color {
+    background: #222;
+}
+</style>
+<script type="text/javascript" src="__PUBLIC__/mobile/style/nav.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/mobile/style/cart_icon.js"></script>
+    
+</head>
+
+<body>
+<include file="Common/nav" /> 
+<div class="allpage">
+    <div class="black-fixed iconfont">&#xe60f;</div>
+ <include file="Common/header" /> 
+
+    <div class="content">
+        <ul class="common_news" id="contentArea">
+
+
+        </ul>
+        <a href="javascript:void(0);" title="查看更多" id="imore" class="imore">查看更多</a>
+    </div>
+    <include file="Common/footer" /> 
+    
+    
+</div>
+ <script language="javascript">
+        
+ var page=1;
+ function getlist(page){
+    $.ajax({
+        type:"GET",
+        url:"__CONTROLLER__/getlist/p/"+page+"/cateid/<?php echo I('get.cateid');?>",
+        dataType:"json",
+        success:function(data){
+            if(data==null || data==''){
+                $("#imore").html('没有了');
+                $("#imore").unbind("click");
+            }
+            var html="";
+            $(data).each(function(k,v){
+                html +='<li class="news1"><a href="/index.php/Cnm/Team/view/id/18.html"><span>'+v.title+'</span><span>2015/09/28</span></a></li>';
+            });
+            $("#contentArea").append(html);
+        }
+        
+
+    });
+    
+ }
+ getlist(1);
+ $("#imore").click(function(){
+    getlist(++page);
+ });
+ </script>
+</body>
+</html>
